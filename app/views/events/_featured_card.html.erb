@@ -24,6 +24,9 @@
           <h2 class="text-inherit font-medium text-sm line-clamp-3 hidden lg:block">
             <%= event.description %>
             <%= home_updated_text(event) %>
+            <span class="text-xs text-gray-500" data-controller="countdown" data-countdown-start-date-value="<%= event.start_date + 9.hours %>">
+              <%= event.start_date %>
+            </span>
           </h2>
         </div>
       </div>
